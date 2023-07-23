@@ -1,6 +1,5 @@
 body {
   overflow: scroll;
-  /* height: 5000px; */
   width: 100%;
 }
 /* General margin and padding removal */
@@ -13,7 +12,7 @@ body {
 header {
   width: 100%;
   position: fixed;
-  top: 0px;
+  top: 0rem;
   background-color: #ffffff;
 }
 /* styling the nav width */
@@ -25,7 +24,7 @@ nav {
   position: fixed;
   left: 50px;
   font-size: 25px;
-  background-color: aqua;
+  /* background-color: aqua; */
   width: 100%;
   height: 50px;
 }
@@ -86,17 +85,7 @@ height: 50px;
   background-color: #e8e1d7;
   list-style-type: none;
 }
-/* nav .maIN > ul > li .product {
-  background-color: #e8e1d7;
-  position: absolute;
-  top: 50px;
-  left: 128px;
-  line-height: 30px;
-  width: 700px;
-  height: 350px;
-  display: none;
-  padding: 10px;
-} */
+
 
 .product > ul  {
 position:absolute;
@@ -222,7 +211,7 @@ nav  ul.second {
   float: left;
 }
 .main-body {
-  height: 1430px;
+  /* height: 1430px; */
   padding-top: 100px;
   background-color: #1e1919;
   text-align: center;
@@ -362,6 +351,8 @@ nav  ul.second {
 .section3 {
   display: flex;
 }
+
+
 .sec3-text {
   background-color: #ffffff;
   height: 700px;
@@ -369,21 +360,43 @@ nav  ul.second {
   padding: 0px 40px 50px 110px;
 }
 
+.img-one{
+transition-duration: 0.2s;
+ transition-property: transform;
+transition-timing-function: linear;
+ 
+}
+
 .sec3-img {
   background-color: #14c8eb;
   height: 1030px;
   width: 50%;
 }
+.sec3-img-One{
+  position:relative;
+  top:-1030px;
+    background-color: red;
+  height: 1030px;
+  width: 50%;
+  transition-duration: 0.2s;
+  transition-timing-function:ease-out;
+}
+
 .sec3-imgchild {
   margin-top: 330px;
   margin-left: 50px;
 }
-.sec3-text > span > div:not(.storage) {
+.sec3-text > span  h3:not(.storage) {
   font-weight: 550;
   font-size: 20px;
+  
+}
+.sec3-text button{
+ background-color:transparent;
+ border: none;
 }
 
-.sec3-text > .storage {
+.sec3-text > .storage h3{
   padding: 54px 54px 54px 25px;
 }
 .sec3-text .storage::first-line {

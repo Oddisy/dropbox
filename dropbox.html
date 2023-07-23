@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="dropbox.css">
   
+  
   </head>
   <body>
     <header>
@@ -94,7 +95,12 @@
               </ul>
                       <!-- second ul container for header floating right -->
                             <ul class="second">
-                                    <li><a href="">Contact</a></li>
+                                    <li><a href="">Contact</a>
+                                                 <!-- <div>
+                                                      <span>Support</span>
+                                                 </div> -->
+                                                    
+                                    </li>
                                     <li><a href="">Get app</a></li>
                                     <li><a href="">Sign up</a></li>
                                     <li><a href="">Sign in</a></li>
@@ -268,60 +274,68 @@ Store computer backups, photo<br> libraries, thousands of documents <br>—all y
  <section class="section3">
   <div class="sec3-text">
     <hr>
-    <span>
-    <div class="storage">Get 2 GB of cloud storage for free with Dropbox Basic<br><br><br>
-      Save and access your files from any device, and share them with anyone.<br>Discover what Dropbox can do for you—get a free account, no strings<br> attached!<br><br>
-      
-     <a href=""> Learn more</a></div>
-     <button onclick="storeSpace()">
-      <img
-     class="section3-ico"
-     src="assets/dropbox dropup.png"
-     alt=" drop down icon"
-     height="20px"
-     width="20px"
-   />
-  </button>
-  </span>
     
+    <span>
+       
+    <div class="storage"><button id="testOne" onclick="storeSlideOne()"><h3>
+      Get 2 GB of cloud storage for free with Dropbox Basic 
+      <img
+     id="imgOne"
+      class="img-one"
+              class="section3-ico"
+              src="assets/dropbox_dropdown-removebg-preview.png"
+              alt=" drop down icon"
+              height="20px"
+              width="20px"
+            /></h3></button><br><br><br>
+      Save and access your files from any device, and share them with anyone.<br>Discover what Dropbox can do for you—get a free account, no strings<br> attached!<br><br>
+     <a href=""> Learn more</a></div>
+    
+  
+  </span>
+   
      <hr>
      <span>
-    <div>Dropbox Plus has room for all your content with space to<br> spare</div>
-    <button onclick="storeSpaceOne()">
+    <div><button id="testTwo" onclick="storeSlideTwo()"><h3>Dropbox Plus has room for all your content with space to spare</div>
+
     <img
+     id="imgOne"
+      class="img-one"
               class="section3-ico"
               src="assets/dropbox_dropdown-removebg-preview.png"
               alt=" drop down icon"
               height="20px"
               width="20px"
             />
-          </button> 
+    </h3></button> 
           </span>
     <hr>
     <span>
-    <div>Dropbox Family is a place for everyone with space for<br> everything</div>
+    <div><button onclick="storeSlideThree()"><h3>Dropbox Family is a place for everyone with space for<br> everything</div>
     <img
               class="section3-ico"
               src="assets/dropbox_dropdown-removebg-preview.png"
               alt=" drop down icon"
               height="20px"
               width="20px"
-            />
+            /></h3></button>
           </span>
     <hr>
     <span>
-    <div>Make life easier for you and your clients with Dropbox<br> Professional</div>
+    <div><button onclick="storeSpaceOne()"><h3>Make life easier for you and your clients with Dropbox<br> Professional</div>
     <img
               class="section3-ico"
               src="assets/dropbox_dropdown-removebg-preview.png"
               alt=" drop down icon"
               height="20px"
               width="20px"
-            />
+            /></h3></button>
             </span>
    <hr>
    <span>
-    <div>Streamline your document workflow with Dropbox Sign</div>
+    <div>
+      <h3>Streamline your document workflow with Dropbox Sign
+    </h3></div>
     <img
     class="section3-ico"
     src="assets/dropbox_dropdown-removebg-preview.png"
@@ -332,7 +346,7 @@ Store computer backups, photo<br> libraries, thousands of documents <br>—all y
   </span>
     <hr>
     <span>
-    <div>Centralize, secure, and easily access your work with<br> Dropbox Standard
+    <div><h3>Centralize, secure, and easily access your work with<br> Dropbox Standard</h3>
     </div>
     <img
     class="section3-ico"
@@ -344,7 +358,7 @@ Store computer backups, photo<br> libraries, thousands of documents <br>—all y
 </span>
   <hr>
   <span>
-    <div>DocSend lets you track, analyze, and optimize your<br> content</div>
+    <div><h3>DocSend lets you track, analyze, and optimize your<br> content</h3></div>
     <img
     class="section3-ico"
     src="assets/dropbox_dropdown-removebg-preview.png"
@@ -355,7 +369,7 @@ Store computer backups, photo<br> libraries, thousands of documents <br>—all y
   </span>
     <hr>
     <span>
-    <div>Proactively detect threats to your team’s content with<br> Dropbox Advanced</div>
+    <div><h3>Proactively detect threats to your team’s content with<br> Dropbox Advanced</h3></div>
     <img
     class="section3-ico"
     src="assets/dropbox_dropdown-removebg-preview.png"
@@ -366,15 +380,20 @@ Store computer backups, photo<br> libraries, thousands of documents <br>—all y
 </span>
     <hr>
   </div>
-<div class="sec3-img">
- <img id="storageImage" class="sec3-imgchild" src="assets/Dropbox storage.png"
+<div id="storeImage"  class="sec3-img">
+ <img  class="sec3-imgchild" src="assets/Dropbox storage.png"
   alt="storage for dropbox" height="500px" width="680px">
 </div>
 
+
  </section>
+ <!-- <div id="storeImageTwo"  class="sec3-img-One">
+ <img  class="sec3-imgchild" src="assets/dpTwo.jpg"
+  alt="storage for dropbox" height="500px" width="680px"> -->
+</div>
  <!-- section 4 -->
  <section class="section4">
-  <h1>How will you use Dropbox?</h1>
+  <h1 id="storeImag">How will you use Dropbox?</h1>
   <div class="sect-4">
    <span><img src="assets/dropbox left.jpg" height="300px" width="600px" alt="A picture of teammates working at home ">
    <div><h1> For Work</h1>
@@ -384,7 +403,7 @@ Store computer backups, photo<br> libraries, thousands of documents <br>—all y
    <h2><a href="">Get Dropbox for work </a><span>&#10132</span></h2></div>
   </span>
     <span><img src="assets/dropbox right.jpg" height="300px" width="600px"
-       alt="A picture of someone  working at home with laptop">
+       alt="A picture of a man siiting in couch  w ith laptop on his lap">
     <div><h1>For personal use</h1>
     <h4 class=" two">Keep everything that’s important to you 
       and your family shareable and<br> safe in
@@ -570,10 +589,6 @@ Illustrator and Graphic Designer
 </footer>
 
 </section>
-
+ <script src="dropbox.js"></script>
 </body>
-<script>
-  let storage = document.getElementById('storage')
-
-</script>
 </html>
